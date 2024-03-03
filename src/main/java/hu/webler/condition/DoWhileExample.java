@@ -8,6 +8,15 @@ public class DoWhileExample {
 
     public static void main(String[] args) {
 
+        boolean hasNext = false;
+        // WrapperClass
+        Boolean hasAnotherNext = null;
+        // long id;
+        Long id = null;
+
+        // fenti kis extra, nem a feladat része!!!
+
+
         // UTF-8 amit használunk alapból, így el is hagyható
         Scanner scanner = new Scanner (System.in, StandardCharsets.UTF_8);  // második paraméter az encoding! -> nem kötelező
 
