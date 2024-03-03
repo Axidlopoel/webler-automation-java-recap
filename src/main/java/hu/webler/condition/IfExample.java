@@ -8,7 +8,7 @@ public class IfExample {
      // checkConditionVoid(number);
         String result = checkConditionResultString(number);
        //System.out.println(result);
-        String message = checkCOndition(number);
+        String message = checkCondition(number);
        // System.out.println(message);
         //checkInconsequential(number);
         checkInconsequentialOther(number);
@@ -42,7 +42,7 @@ public class IfExample {
     private static void checkInconsequentialOther(int number) {
         if (number < 10) {
             System.out.println("A szám kisebb, mint 10.");
-            return; // <-- egszakítja, és az utána élevőket nem futtatja, ha belemegy a feltételbe!
+            return; // <-- megszakítja, és az utána élevőket nem futtatja, ha belemegy a feltételbe!
         }
         if (number < 20) {
             System.out.println("A szám legalább 10, de kisebb mint 20.");
@@ -66,7 +66,7 @@ public class IfExample {
         }
     }
 
-    private static String checkCOndition(int number) {
+    private static String checkCondition(int number) {
         String message = "";
         if (number < 10) {
             message = "A szám kisebb, mint 10.";
